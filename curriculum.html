@@ -18,7 +18,7 @@
                         <legend>Personal Data</legend>
                         
                         <label for="dui">DUI</label>
-                        <input type="number" name="dui" placeholder="00000000-0" pattern="[0-9]{8}-[0-9]{1}" title="Enter ID" required>
+                        <input type="text" name="dui" placeholder="00000000-0" pattern="[0-9]{8}-[0-9]{1}" maxlength="10" title="Enter ID" required>
                         
                         <label for="firstName">First Name</label>
                         <input type="text" name="firstName" placeholder="Juan" title="First name" required>
@@ -33,10 +33,10 @@
                         <br><br>
     
                         <label for="contactNumber">Contact Number</label>
-                        <input type="number" name="contactNumber" placeholder="2257-7777" pattern="[0-9]{4}-[0-9]{4}" title="Phone number">
+                        <input type="tel" name="contactNumber" placeholder="2257-7777" pattern="[0-9]{4}-[0-9]{4}" title="Phone number">
     
                         <label for="birthdate">BirthDate</label>
-                        <input type="date" name="birthdate" title="Birth Date">
+                        <input type="date" name="birthdate" title="Birth Date" min="2000-01-01" max="2018-12-31">
     
                         <label for="civilStatus">Civil Status</label>
                         <select name="civilStatus">
@@ -58,7 +58,7 @@
                     <fieldset>
                         <legend>Work Experience</legend>
 
-                        <textarea name="workExperience" cols="150" rows="20" placeholder="Experience"></textarea>
+                        <textarea name="workExperience" cols="200" rows="10" placeholder="Experience"></textarea>
                     </fieldset>
             
                 </article>
@@ -70,7 +70,7 @@
                     <fieldset>
                             <legend>Academic training</legend>
         
-                            <textarea name="training" cols="150" rows="20" placeholder="Training"></textarea>
+                            <textarea name="training" cols="200" rows="10" placeholder="Training"></textarea>
         
                     </fieldset>
 
@@ -85,22 +85,22 @@
                         
                         <fieldset>
                             <legend>Programming languages</legend>
-                            <input type="radio" name="languages[]"> Java
-                            <input type="radio" name="languages[]"> C#
-                            <input type="radio" name="languages[]"> Python
-                            <input type="radio" name="languages[]"> C++
-                            <input type="radio" name="languages[]"> Ruby
+                            <input type="checkbox" name="languages[]"> Java
+                            <input type="checkbox" name="languages[]"> C#
+                            <input type="checkbox" name="languages[]"> Python
+                            <input type="checkbox" name="languages[]"> C++
+                            <input type="checkbox" name="languages[]"> Ruby
                         </fieldset>
                         
                         <br><br>
 
                         <fieldset>
                             <legend>Web skills</legend>
-                            <input type="radio" name="webSkills[]"> HTML
-                            <input type="radio" name="webSkills[]"> CSS
-                            <input type="radio" name="webSkills[]"> JavaScript
-                            <input type="radio" name="webSkills[]"> Node.js
-                            <input type="radio" name="webSkills[]"> Spring MVC
+                            <input type="checkbox" name="webSkills[]"> HTML
+                            <input type="checkbox" name="webSkills[]"> CSS
+                            <input type="checkbox" name="webSkills[]"> JavaScript
+                            <input type="checkbox" name="webSkills[]"> Node.js
+                            <input type="checkbox" name="webSkills[]"> Spring MVC
                         
                         </fieldset>
                     </fieldset>
