@@ -8,114 +8,112 @@
 </head>
 <body>
 
-    <header>
+    <header id="titulo">
         <h1>Curriculum Vitae</h1>
-
-        <section>
-            <form action="" method="GET">
-                <article>
-                    <fieldset>
-                        <legend>Personal Data</legend>
-                        
-                        <label for="dui">DUI</label>
-                        <input type="text" name="dui" placeholder="00000000-0" pattern="[0-9]{8}-[0-9]{1}" maxlength="10" title="Enter ID" required>
-                        
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" placeholder="Juan" title="First name" required>
-    
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" placeholder="Perez" title="Last name" required>
-    
-                        <label for="gender">Gender</label>
-                        <input type="radio" name="gender[]" title="Gender"> M 
-                        <input type="radio" name="gender[]" title="Gender"> F
-                        
-                        <br><br>
-    
-                        <label for="contactNumber">Contact Number</label>
-                        <input type="tel" name="contactNumber" placeholder="2257-7777" pattern="[0-9]{4}-[0-9]{4}" title="Phone number">
-    
-                        <label for="birthdate">BirthDate</label>
-                        <input type="date" name="birthdate" title="Birth Date" min="2000-01-01" max="2018-12-31">
-    
-                        <label for="civilStatus">Civil Status</label>
-                        <select name="civilStatus">
-                            <option value="single" title="Civil Status">Single</option>
-                            <option value="married" title="Civil Status">Married</option>
-                            <option value="complicated" title="Civil Status">Complicated</option>
-                        </select>
-    
-                        <label for="image">Image</label>
-                        <input type="file">
-                        
-                    </fieldset>
-                        
-                </article>
-                
-                <br><br>
-
-                <article>
-                    <fieldset>
-                        <legend>Work Experience</legend>
-
-                        <textarea name="workExperience" cols="200" rows="10" placeholder="Experience"></textarea>
-                    </fieldset>
-            
-                </article>
-
-                <br>
-
-                <article>
-
-                    <fieldset>
-                            <legend>Academic training</legend>
-        
-                            <textarea name="training" cols="200" rows="10" placeholder="Training"></textarea>
-        
-                    </fieldset>
-
-                </article>
-                
-                <br><br>
-                
-                <article>
-
-                    <fieldset>
-                        <legend>Further training</legend>
-                        
-                        <fieldset>
-                            <legend>Programming languages</legend>
-                            <input type="checkbox" name="languages[]"> Java
-                            <input type="checkbox" name="languages[]"> C#
-                            <input type="checkbox" name="languages[]"> Python
-                            <input type="checkbox" name="languages[]"> C++
-                            <input type="checkbox" name="languages[]"> Ruby
-                        </fieldset>
-                        
-                        <br><br>
-
-                        <fieldset>
-                            <legend>Web skills</legend>
-                            <input type="checkbox" name="webSkills[]"> HTML
-                            <input type="checkbox" name="webSkills[]"> CSS
-                            <input type="checkbox" name="webSkills[]"> JavaScript
-                            <input type="checkbox" name="webSkills[]"> Node.js
-                            <input type="checkbox" name="webSkills[]"> Spring MVC
-                        
-                        </fieldset>
-                    </fieldset>
-            
-                </article>
-                <br>
-
-                <input type="submit" value="Send">
-                <input type="reset" value="Cancel">
-
-            </form>
-            
-
-        </section>
     </header>
+    <section>
+        <form action="" method="GET">
+            <article>
+                <fieldset>
+                    <legend>Personal Data</legend>
+                        
+                    <label for="dui">DUI</label>    
+                    <input type="text" name="dui" placeholder="00000000-0" pattern="[0-9]{8}-[0-9]{1}" maxlength="10" title="Enter ID" required>
+                        
+                    <label for="firstName">First Name</label>   
+                    <input type="text" name="firstName" placeholder="Juan" title="First name" required>
+    
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="Perez" title="Last name" required>
+    
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender[]" title="Gender"> M 
+                    <input type="radio" name="gender[]" title="Gender"> F
+                        
+                    <br><br>
+    
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" name="contactNumber" placeholder="2257-7777" pattern="[0-9]{4}-[0-9]{4}" title="Phone number">
+    
+                    <label for="birthdate">BirthDate</label>
+                    <input type="date" name="birthdate" title="Birth Date" min="2000-01-01" max="2018-12-31">
+    
+                    <label for="civilStatus">Civil Status</label>
+                    <select name="civilStatus">
+                        <option value="single" title="Civil Status">Single</option>
+                        <option value="married" title="Civil Status">Married</option>
+                        <option value="complicated" title="Civil Status">Complicated</option>
+                    </select>
+    
+                    <label for="image">Image</label>
+                    <input type="file">
+                        
+                </fieldset>
+                        
+            </article>
+                
+            <br><br>
+
+            <article>
+                <fieldset>
+                    <legend>Work Experience</legend>
+
+                    <textarea name="workExperience" cols="200" rows="10" placeholder="Experience"></textarea>
+                </fieldset>
+           
+            </article>
+
+            <br>
+
+            <article>
+
+                <fieldset>
+                    <legend>Academic training</legend>
+        
+                    <textarea name="training" cols="200" rows="10" placeholder="Training"></textarea>
+        
+                </fieldset>
+
+            </article>
+               
+            <br><br>
+                
+            <article>
+
+                <fieldset>
+                    <legend>Further training</legend>
+                        
+                    <fieldset>
+                        <legend>Programming languages</legend>
+                        <input type="checkbox" name="languages[]"> Java
+                        <input type="checkbox" name="languages[]"> C#
+                        <input type="checkbox" name="languages[]"> Python
+                        <input type="checkbox" name="languages[]"> C++
+                        <input type="checkbox" name="languages[]"> Ruby
+                    </fieldset>
+                        
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Web skills</legend>
+                        <input type="checkbox" name="webSkills[]"> HTML
+                        <input type="checkbox" name="webSkills[]"> CSS
+                        <input type="checkbox" name="webSkills[]"> JavaScript
+                        <input type="checkbox" name="webSkills[]"> Node.js
+                        <input type="checkbox" name="webSkills[]"> Spring MVC
+                        
+                    </fieldset>
+                </fieldset>
+            
+            </article>
+            <br>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Cancel">
+
+        </form>
+            
+    </section>
     
 </body>
 </html>
